@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +8,59 @@
         <title>Опитування</title>
     </head>
     <body>
-        <h2>Опитувальник</h2>
-        <p>Чи читаэте ви книжки?</p>
-        <input type="checkbox" name="type" value="Читаю">
-        <label>Читаю</label>
-        <input type="checkbox" name="type" value="Не читаю взагалі">
-        <label>Не читаю взагалі</label>
-        <input type="checkbox" name="type" value="Інколи читаю">
-        <label>Інколи читаю</label>
-        <p>Чи читаєте Ви Кінга?</p>
-        <input type="radio" name="quantity" value="one">
-        <label>Читаю</label>
-        <input type="radio" name="quantity" value="none">
-        <label>Не читаю</label>
-        <input type="radio" name="quantity" value="two">
-        <label>Планую почати читати</label>
-        <form method="POST" action="https://formspree.io/nazar.himin@gmail.com">
-            <input type="text" name="Name" placeholder="Як вас звати">
-            <br>
-            <textarea name="message" placeholder="напиши, що ти знаєш про Стівена Кінга"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>
+        <header>
+            <h1 align="center">Опитувальник</h1>
+        </header>
+        <main>
+            <form method="post" action="https://formspree.io/nazar.himin@gmail.com">
+                <label>
+                    Як вас звати?
+                        <input type="text" name="і'мя" placeholder="Впишіть ваше ім'я" required>
+                </label>
+                <label>
+                    Ваша е-пошта
+                        <input type="email" name="мейл" placeholder="Впишіть ваш мейл" required>
+                </label>
+                <label>
+                    Ваш номер телефону
+                        <input type="text" name="телефон" pattern="[+]{1}[0-9]{12}" title="+38(097)1231123" placeholder="+38(097)1234567" required>
+                </label>
+                Чи читаэте ви книжки?
+                
+                <label>
+                    <input type="checkbox" name="type" value="Читаю">Читаю
+                
+                </label>
+                <label>
+                    <input type="checkbox" name="type" value="Не читаю взагалі">Не читаю взагалі
+                
+                </label>
+                <label>
+                    <input type="checkbox" name="type" value="Інколи читаю">Інколи читаю
+                
+                </label>
+                <p>Чи читаєте Ви Кінга?</p>
+                <label>
+                    <input type="radio" name="quantity" value="one">Читаю
+                
+                </label>
+                <label>
+                    <input type="radio" name="quantity" value="none">Не читаю
+                
+                </label>
+                <label>
+                    <input type="radio" name="quantity" value="two">Планую почати читати
+                
+                </label>
+                <input type="text" name="Name" placeholder="Як вас звати">
+                <br>
+                <textarea name="message" placeholder="напиши, що ти знаєш про Стівена Кінга"></textarea>
+                <button type="submit">Send</button>
+            </form>
             <a href="index.html ">
-                <button>
-                    <b>На головну</b>
-                </button>
+                <b>На головну</b>
             </a>
-        </p>
+        </main>
         <footer>
             <p align="center" style="color:#b34700">
                 <i>Ⓒ Starwanderer</i>
